@@ -66,10 +66,10 @@ h3 {
 }
 
 #logo {
-  width: 250px;
+  width: 270px;
   height: 90px;
   float: left;
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: 'Georgia', Times, "Times New Roman", serif;
   text-align: center;
   line-height: 90px;
   color: #fff;
@@ -243,4 +243,39 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width: 980px) {
+
+  .container { width: 600px; }
+  .main-section { width: 260px; }
+  .work { width: 200px; }
+  .work img { width: 200px; height: 150px; }
+  .work h3 { line-height: 10px; font-size: 15px; }
+ 
+}
+
+@media screen and (max-width: 768px) {
+
+  .container { width: 600px; }
+  .main-section { width: 560px; padding: 20px; margin: 20px; }
+  .sidebar { max-width: 560px; padding: 20px; margin: 20px; float: left; }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  #masthead { position: static; float: left; }
+  #logo { width: 600px; float: left; }
+  nav { float: left; padding: 0px; margin: 0px; }
+  nav a { padding-left: 50px; margin-left: 50px; }
+  #main-container {padding-top: 0px;}
+  .auth-image { width: 500px; }
+  .container { width: 600px; }
+  .main-section { width: 560px; padding: 20px; margin: 20px; margin-top: 0px; }
+  .sidebar { max-width: 560px; padding: 20px; margin: 20px; float: left; }
+  .work { width: 500px; }
+  .work img { width: 500px; height: auto; }
+  .work h3 { line-height: 30px; font-size: 20px; }
+  
 }
